@@ -1,5 +1,6 @@
 plugins {
-  id("org.jetbrains.kotlin.jvm")
+  kotlin("jvm")
+  myPlugin()
   application
 }
 
@@ -14,4 +15,3 @@ dependencies {
 application {
   mainClass.set("com.ideabaker.samples.gradle.AppKt")
 }
-

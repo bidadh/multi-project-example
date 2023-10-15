@@ -12,3 +12,4 @@ plugins {
 
 rootProject.name = "multi-project-example"
 include("app")
+include("service")

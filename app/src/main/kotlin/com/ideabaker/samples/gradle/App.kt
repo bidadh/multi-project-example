@@ -3,13 +3,10 @@
  */
 package com.ideabaker.samples.gradle
 
-class App {
-    val greeting: String
-        get() {
-            return "Hello World!"
-        }
-}
+import com.ideabaker.sample.gradle.multi.service.MessageService
+
+class App
 
 fun main() {
-    println(App().greeting)
+  println(MessageService.generateMessage())
 }

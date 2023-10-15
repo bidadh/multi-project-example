@@ -19,7 +19,5 @@ rootProject.name = "multi-project-example"
 
 val projects = listOf("app", "service")
 
-projects.forEach {
-  include(it)
-}
+include(projects)
 

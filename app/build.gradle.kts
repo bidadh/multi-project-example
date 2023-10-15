@@ -1,5 +1,5 @@
 plugins {
-  myPlugin()
+  projectPlugin()
   application
 }
 

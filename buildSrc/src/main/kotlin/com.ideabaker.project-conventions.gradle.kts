@@ -1,3 +1,4 @@
+import org.jetbrains.kotlin.gradle.dsl.JvmTarget
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
@@ -13,10 +14,10 @@ tasks.withType<Test> {
   useJUnitPlatform()
 }
 
-tasks.withType<KotlinCompile> {
-  kotlinOptions {
-    jvmTarget = "20"
-    freeCompilerArgs += "-Xjsr305=strict"
+kotlin {
+  compilerOptions {
+    jvmTarget.set(JvmTarget.JVM_20)
+    freeCompilerArgs.add("-Xjsr305=strict")
   }
 }
 

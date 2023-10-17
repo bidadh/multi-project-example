@@ -1,4 +1,4 @@
-package come.ideabaker.samples.gradle.tasks
+package come.ideabaker.samples.gradle.plugins
 
 import org.gradle.api.DefaultTask
 import org.gradle.api.provider.Property

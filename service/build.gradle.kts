@@ -1,10 +1,13 @@
-import come.ideabaker.samples.gradle.tasks.StringDiffTask
+import come.ideabaker.samples.gradle.plugins.StringDiffPlugin
+import come.ideabaker.samples.gradle.plugins.StringDiffPluginExtension
 
 plugins {
   projectPlugin()
 }
 
-tasks.register<StringDiffTask>("stringDiff") {
-  string1.set("strin1")
-  string2.set("string2")
+apply<StringDiffPlugin>()
+
+configure<StringDiffPluginExtension> {
+  string1.set("Hi")
+  string2.set("Gradle")
 }

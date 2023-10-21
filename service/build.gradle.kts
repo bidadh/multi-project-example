@@ -3,7 +3,7 @@ import com.ideabaker.samples.gradle.plugins.StringDiffPluginExtension
 import com.ideabaker.samples.gradle.plugins.diff.DiffPluginExtension
 
 plugins {
-  projectPlugin()
+  libPlugin()
 }
 
 apply<StringDiffPlugin>()

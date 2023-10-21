@@ -1,6 +1,5 @@
 plugins {
-  projectPlugin()
-  application
+  appPlugin()
 }
 
 dependencies {

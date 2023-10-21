@@ -2,6 +2,7 @@ import org.jetbrains.kotlin.gradle.dsl.JvmTarget
 
 plugins {
   kotlin("jvm")
+  id("com.ideabaker.samples.gradle.plugins.greeting-plugin")
   java
 }
 

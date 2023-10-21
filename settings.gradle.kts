@@ -1,10 +1,20 @@
 pluginManagement {
   val kotlinVersion: String by settings
+  val greetingVersion: String by settings
   plugins {
     kotlin("jvm").version(kotlinVersion)
+    id("com.ideabaker.samples.gradle.plugins.greeting-plugin") version greetingVersion
   }
 
   repositories {
+    maven {
+      name = "github"
+      url = uri("https://maven.pkg.github.com/bidadh/string-diff-plugin")
+      credentials {
+        username = "bidadh"
+        password = System.getenv("GITHUB_TOKEN")
+      }
+    }
     gradlePluginPortal()
   }
 }

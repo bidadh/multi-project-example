@@ -14,3 +14,8 @@ dependencies {
 application {
   mainClass.set("com.ideabaker.samples.gradle.AppKt")
 }
+
+diffConfig {
+  string1.set("string1")
+  string2.set("string2")
+}

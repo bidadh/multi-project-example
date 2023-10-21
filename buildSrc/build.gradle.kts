@@ -1,5 +1,5 @@
 val kotlinVersion: String = "1.9.0"
-val greetingVersion: String = "0.0.1"
+val greetingVersion: String = "0.0.3"
 plugins {
   `kotlin-dsl`
   kotlin("jvm") version "1.9.0"

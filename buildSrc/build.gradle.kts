@@ -6,17 +6,10 @@ plugins {
 }
 
 repositories {
-  maven {
-    name = "github"
-    url = uri("https://maven.pkg.github.com/bidadh/string-diff-plugin")
-    credentials {
-      username = "bidadh"
-      password = System.getenv("GITHUB_TOKEN")
-    }
-  }
   gradlePluginPortal()
 }
 
+// (plugin) dependencies are required so that we can use in `project-convention` plugins etc.
 dependencies {
   implementation(
     group = "org.jetbrains.kotlin.jvm",

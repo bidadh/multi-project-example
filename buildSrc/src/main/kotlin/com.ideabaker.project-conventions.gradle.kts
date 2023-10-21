@@ -2,6 +2,7 @@ import org.jetbrains.kotlin.gradle.dsl.JvmTarget
 
 plugins {
   kotlin("jvm")
+  // once you include plugin in dependencies section you can apply without specifying the version!
   id("com.ideabaker.samples.gradle.plugins.greeting-plugin")
   java
 }

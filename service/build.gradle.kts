@@ -1,5 +1,5 @@
-import come.ideabaker.samples.gradle.plugins.StringDiffPlugin
-import come.ideabaker.samples.gradle.plugins.StringDiffPluginExtension
+import com.ideabaker.samples.gradle.plugins.StringDiffPlugin
+import com.ideabaker.samples.gradle.plugins.StringDiffPluginExtension
 
 plugins {
   projectPlugin()

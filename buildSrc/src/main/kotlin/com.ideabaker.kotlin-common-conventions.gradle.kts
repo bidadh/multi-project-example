@@ -5,7 +5,12 @@ plugins {
   // once you include plugin in dependencies section you can apply without specifying the version!
   id("com.ideabaker.samples.gradle.plugins.greeting-plugin")
   id("com.ideabaker.samples.gradle.plugins.diff-plugin")
+  id("org.barfuin.gradle.taskinfo")
   java
+}
+
+project.gradle.taskGraph.whenReady {
+  logger.debug("{}", project.gradle.taskGraph.allTasks)
 }
 
 repositories {
